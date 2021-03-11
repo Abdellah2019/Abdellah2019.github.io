@@ -104,7 +104,12 @@ html{
 .sticky .menu-toggler span{
   background-color: #111;
 }
-
+/*
+body{
+  background: url(../images/bg.jpg) no-repeat center;
+  background-size: cover;
+}
+*/
 #home{
   height: 100vh;
   min-height: 500px;
@@ -656,10 +661,16 @@ footer{
 
 PHOTO
 */
-.container{
-  width:1200px;
+.My_boite{
+  //margin-left:200px;
   display:flex;
   justify-content:center;
+
+}
+.container{
+  width:200px;
+  //display:flex;
+  //justify-content:center;
   align-items:center;
   flex-wrap:wrap;
   margin-left:-55%;
@@ -668,11 +679,14 @@ PHOTO
   position:relative;
   width:300px;
   height:300px;
-  display:flex;
+  //display:flex;
+  //justify-content:center;
   margin:40px;
 }
 .container .box .imgBx{
   position:absolute;
+  display:flex;
+  justify-content:center;
   top:0;
   left:0;
   width:100%;
@@ -826,5 +840,17 @@ FIN Progress Bar
   .nameZone, .emailZone{
     max-width: 100%;
   }
+  .box{
+    display:flex;
+    justify-content: center;
+    width:100%;
+  }
 }
 
+@media screen and(max-width:400px){
+  .box{
+    display:flex;
+    justify-content: center;
+    width:100%;
+  }
+}
